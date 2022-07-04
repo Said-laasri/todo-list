@@ -19,5 +19,6 @@ app.use(
 
 // Serve the files on port 3000.
 app.listen(3000, () => {
+  // eslint-disable-next-line no-console
   console.log('Example app listening on port 3000!\n');
 });

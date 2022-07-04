@@ -46,11 +46,14 @@ to use the project To do list please follow :
 ### Usage
 
 >open your directory To-do-List/
-to run the file :
+
 _use vs-code or any IDE  to view line code .
 
 _use you preferd browser to run the file .html to get project website.
-
+to run in terminal / git  :
+-----------------
+ $ npm start
+ _____________
 ## Authors
 
 👤 **Said laasri**
