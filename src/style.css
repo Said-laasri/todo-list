@@ -1,3 +1,14 @@
 body {
   background-color: blueviolet;
 }
+
+h1 {
+  font-size: 30px;
+  color: brown;
+}
+
+p {
+  font-size: larger;
+  color: aliceblue;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
