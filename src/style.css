@@ -1,0 +1,104 @@
+body {
+  margin: 5% 15%;
+  padding: 3px;
+  box-sizing: border-box;
+  border: 1px solid #272626;
+  box-shadow: 4px 4px #9c9595b2;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #3d3a3a;
+  padding: 10px 12px;
+}
+
+header:hover {
+  background-color: rgb(202, 240, 227);
+}
+
+header > div > h1 {
+  font-family: sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+}
+
+.addInput {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #3d3a3a;
+  padding: 10px 12px;
+}
+
+.addInput .icon > i {
+  color: rgb(39, 35, 29);
+  width: 30px;
+}
+
+.shores {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+
+.shores .listDo {
+  display: flex;
+  justify-content: space-between;
+  width: 95%;
+  align-items: center;
+  padding: 1px 14px;
+  border-bottom: 1px solid #8b8585;
+}
+
+.listDo .listElement {
+  display: flex;
+  align-items: center;
+  padding: 1px 5px;
+  gap: 12px;
+  cursor: cell;
+}
+
+.listDo > div {
+  cursor: cell;
+}
+
+.input > input {
+  border: none;
+  font-style: italic;
+  font-size: 20px;
+  font-family: sans-serif;
+  width: 400px;
+  height: 50px;
+}
+
+.input > input::placeholder {
+  padding: 10px 10px;
+}
+
+.clear {
+  width: 100%;
+  height: max-content;
+}
+
+.clear > button {
+  font-size: larger;
+  text-align: center;
+  font-family: sans-serif;
+  color: #746e6ec9;
+  width: 100%;
+  padding: 14px 6px;
+  border: none;
+}
+
+.clear > button:hover {
+  background-color: rgb(202, 240, 227);
+}
+
+h2 {
+  font-size: 19px;
+}
