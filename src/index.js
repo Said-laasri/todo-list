@@ -5,22 +5,22 @@ import _ from 'lodash';
 const toDo = [
   {
     description: 'clean my room',
-    comleted: false,
+    completed: false,
     index: 1,
   },
   {
     description: 'check my emails',
-    comleted: true,
+    completed: true,
     index: 2,
   },
   {
     description: 'read my book',
-    comleted: false,
+    completed: false,
     index: 3,
   },
   {
     description: 'working on my coding skills',
-    comleted: false,
+    completed: false,
     index: 4,
   },
 ];
