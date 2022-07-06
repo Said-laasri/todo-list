@@ -1,8 +1,11 @@
+import { clearList, clearAll } from './checkbox.js';
+
 const tasklistDisplay = document.querySelector('.shores');
 const inputValu = document.querySelector('.newTask');
 const addBtn = document.querySelector('.addtolist');
+const clearBtn = document.querySelector('.deleteallselect');
 
-let taskList = [];
+let taskList = JSON.parse(localStorage.getItem('localItem')) || [];
 
 const display = () => {
   tasklistDisplay.innerHTML = '';
@@ -10,10 +13,11 @@ const display = () => {
   taskList.forEach((task) => {
     const tasklistDisplay = document.querySelector('.shores');
     const shore = document.createElement('div');
+    const flag = task.completed ? 'checked' : '';
     shore.classList.add('listDo');
     shore.innerHTML = `
-  <input type="checkbox">
-  <input class="editTask" type="text"  value="${task.description}"   >
+  <input class="check" ${flag} type="checkbox" data-set="${task.index}" >
+  <input class="editTask" type="text"  value="${task.description}" >
   <div>
   <i class="fa-solid fa-trash-can" id="${task.index}"></i>
   </div>
@@ -66,4 +70,11 @@ tasklistDisplay.addEventListener('click', (e) => {
     const index = parseInt(e.target.getAttribute('id'), 10);
     removeTask(index);
   }
+});
+
+tasklistDisplay.addEventListener('click', clearList);
+
+clearBtn.addEventListener('click', () => {
+  clearAll();
+  display();
 });
