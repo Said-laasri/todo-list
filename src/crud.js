@@ -12,14 +12,22 @@ const display = () => {
     const shore = document.createElement('div');
     shore.classList.add('listDo');
     shore.innerHTML = `
-  <div class="listElement">
   <input type="checkbox">
-  <h2>${task.description}</h2>
-  </div>
+  <input class="editTask" type="text"  value="${task.description}"   >
   <div>
   <i class="fa-solid fa-trash-can" id="${task.index}"></i>
-  </div>`;
+  </div>
+ `;
     tasklistDisplay.appendChild(shore);
+    const taskInput = shore.children[1];
+    taskInput.addEventListener('change', () => {
+      const taskListChores = document.querySelector('.shores');
+      const array = Array.from(taskListChores.children);
+      const index = array.indexOf(shore);
+      const taskListLocal = JSON.parse(localStorage.getItem('localItem'));
+      taskListLocal[index].description = taskInput.value;
+      localStorage.setItem('localItem', JSON.stringify(taskListLocal));
+    });
   });
 };
 

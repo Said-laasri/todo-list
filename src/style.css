@@ -102,3 +102,16 @@ header > div > h1 {
 h2 {
   font-size: 19px;
 }
+
+.editTask {
+  width: 81%;
+  height: 3rem;
+  border: none;
+  font-family: sans-serif;
+  font-size: 21px;
+  color: rgba(128, 128, 128, 0.979);
+}
+
+.shores .listDo:hover {
+  background-color: rgb(212, 240, 231);
+}
