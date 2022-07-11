@@ -54,6 +54,10 @@ to run in terminal / git  :
 -----------------
  $ npm start
  _____________
+ ###  LIVE DEMO
+ 
+ [Click here](https://said-laasri.github.io/To-do-List/)
+
 ## Authors
 
 👤 **Said laasri**
