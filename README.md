@@ -56,7 +56,10 @@ _use you preferd browser to run the file .html to get project website.
 to run in terminal / git  :
 -----------------
  $ npm install
- $ npm start
+ *************
+ $ npm run build`
+****************
+$ npm start
  _____________
  ###  LIVE DEMO
  
