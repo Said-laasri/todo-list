@@ -15,6 +15,9 @@ The pull request is opened to get a review on the project and check for any requ
 - following github flows standards.
 - webpack.
 
+## live Demo
+
+[Link](https://said-laasri.github.io/todo-list/)
 
 ## Getting Started
 
