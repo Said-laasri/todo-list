@@ -1,117 +1,126 @@
-body {
-  margin: 5% 15%;
-  padding: 3px;
+* {
+  padding: 0;
+  margin: 0;
   box-sizing: border-box;
-  border: 1px solid #272626;
-  box-shadow: 4px 4px #9c9595b2;
+  background-color: #f8f8f8;
 }
 
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #3d3a3a;
-  padding: 10px 12px;
-}
-
-header:hover {
-  background-color: rgb(202, 240, 227);
-}
-
-header > div > h1 {
+html {
   font-family: sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  color: black;
+  font-size: 62.5%;
 }
 
-.addInput {
+.header {
+  background-color: #dad0d0;
+  padding: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  border: #9e9696 1px solid;
+  box-shadow: #010101 1px 6px 4px 1px
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  color: #454545;
+  font-family: "Courier New", Courier, monospace, sans-serif;
+  background-color: #dad0d0;
+}
+
+.lists-container {
+  width: 60rem;
+  margin: 0 auto;
+  margin-top: 15rem;
+  border: 1px solid #1a1717;
+  box-shadow: 2px 4px 4px 5px #010101;
+  z-index: 9;
+}
+
+.title-container,
+.input-container,
+.list {
+  border-bottom: 1px solid #e6e6e6;
+  padding: 1.6rem;
+}
+
+.title-container,
+.input-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.lists {
+  list-style: none;
+}
+
+.list {
+  font-size: 1.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #3d3a3a;
-  padding: 10px 12px;
 }
 
-.addInput .addtolist:hover {
-  cursor: pointer;
-  background-color: cornflowerblue;
-}
-
-.addInput .addtolist > i {
-  color: rgb(39, 35, 29);
-  width: 30px;
-}
-
-.shores {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-  width: 100%;
-}
-
-.shores .listDo {
-  display: flex;
-  justify-content: space-between;
-  width: 95%;
-  align-items: center;
-  padding: 1px 14px;
-  border-bottom: 1px solid #8b8585;
-}
-
-.listDo .listElement {
+.list-left {
   display: flex;
   align-items: center;
-  padding: 1px 5px;
-  gap: 12px;
+  gap: 0.8rem;
 }
 
-.input > input {
+.clear-container {
+  padding: 1.6rem;
+  display: flex;
+  justify-content: center;
+  background-color: #f8f8f8;
+}
+
+.title-container h2 {
+  font-size: 2rem;
+  color: #454545;
+}
+
+.input-container input,
+.todo {
   border: none;
+  outline: none;
+  font-size: 1.8rem;
+  padding: 0.4rem;
+}
+
+.input-container input::placeholder {
   font-style: italic;
-  font-size: 20px;
-  font-family: sans-serif;
-  width: 400px;
-  height: 50px;
+  color: #c2b8b8;
 }
 
-.input > input::placeholder {
-  padding: 10px 10px;
+.todo {
+  font-size: 1.6rem;
 }
 
-.clear {
-  width: 100%;
-  height: max-content;
+.list:focus-within,
+.todo:focus {
+  background-color: #dff6ba;
 }
 
-.clear > button {
-  font-size: larger;
+.btn {
+  cursor: pointer;
+  background: none;
+  border: none;
+  z-index: 99;
+}
+
+.btn-clear {
+  color: #565050;
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.cross {
+  text-decoration: line-through;
+}
+
+footer {
   text-align: center;
-  font-family: sans-serif;
-  color: #746e6ec9;
-  width: 100%;
-  padding: 14px 6px;
-  border: none;
-}
-
-.clear > button:hover {
-  background-color: rgb(202, 240, 227);
-}
-
-h2 {
-  font-size: 19px;
-}
-
-.editTask {
-  width: 81%;
-  height: 3rem;
-  border: none;
-  font-family: sans-serif;
-  font-size: 21px;
-  color: rgba(128, 128, 128, 0.979);
-}
-
-.shores .listDo:hover {
-  background-color: rgb(212, 240, 231);
+  margin-top: 1.6rem;
+  font-size: 1.4rem;
+  color: #565050;
 }
