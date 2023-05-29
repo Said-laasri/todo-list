@@ -7,20 +7,21 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch",
     "start": "webpack serve --open",
-    "build": "webpack",
-    "deploy": "gh-pages -d dist"
+    "build": "webpack --mode=development",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"  
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/amejid/todo-list.git"
+    "url": "git+https://github.com/Said-laasri/todo-list.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/amejid/todo-list/issues"
+    "url": "https://github.com/Said-laasri/todo-list/issues"
   },
-  "homepage": "https://github.com/amejid/todo-list#readme",
+  "homepage": "https://github.com/Said-laasri/todo-list#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.7.1",
