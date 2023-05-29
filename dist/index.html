@@ -1,38 +1,33 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8">
-    <title>To-do-List</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
-  <script defer src="/runtime.87efebda.js"></script><script defer src="/index.87efebda.js"></script><script defer src="/crud.87efebda.js"></script></head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo-list</title>
+  <script defer src="/todo-list/runtime.bundle.js"></script><script defer src="/todo-list/index.bundle.js"></script><script defer src="/todo-list/crud.bundle.js"></script></head>
   <body>
-    <header>
-      <div class="todo">
-        <h1>Today's To Do</h1>
-      </div>
-      <div class="iconth">
-        <i class="fa-solid fa-arrows-rotate"></i>
-      </div>
+    <header class="header">
+      <h1>Todo List</h1>
     </header>
-    <form  id="toForm"  class="addInput">
-      <div class="input">
-        <input type="text" class="newTask" placeholder="Add to your list...">
+    <div class="lists-container">
+      <div class="title-container">
+        <h2>Here is the following task for today:</h2>
+        <button class="btn btn-refresh"><i class="fa-solid fa-arrows-rotate"></i></button>
       </div>
-      <div class="addtolist">
-        <span class="material-symbols-outlined">
-          arrow_forward
-          </span>
+      <form class="input-container" action="">
+        <input class="todo-input" type="text" placeholder="Add to your list..." />
+        <button type="submit" class="btn btn-enter">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+        </button>
+      </form>
+      <ul class="lists"></ul>
+      <div class="clear-container">
+        <button class="btn btn-clear">Clear all completed</button>
       </div>
-    </form>
-    <section class="do">
-      <div class="shores">
-
-      </div>
-      <div class="clear">
-        <Button class="deleteallselect" >Clear all completed</Button>
-      </div>
-    </section>
+    </div>
+    <footer class="footer">
+      <p>Created by Said Laasri, @2022 All Right Reserved </p>
+    </footer>
   </body>
 </html>

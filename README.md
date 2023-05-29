@@ -52,6 +52,7 @@ _use vs-code or any IDE  to view line code .
 _use you preferd browser to run the file .html to get project website.
 to run in terminal / git  :
 -----------------
+ $ npm install
  $ npm start
  _____________
  ###  LIVE DEMO

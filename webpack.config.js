@@ -5,23 +5,25 @@ module.exports = {
   mode: 'development',
   entry: {
     index: './src/index.js',
-    crud: './src/crud.js',
+    crud: './src/operations.js',
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    static: './dist',
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
     }),
   ],
-  devtool: 'inline-source-map',
-  devServer: {
-    static: './dist',
-    hot: true,
-  },
   output: {
-    filename: '[name].[hash:8].js',
+    filename: '[name].bundle.js',
     path: path.resolve(__dirname, 'dist'),
     clean: true,
-    publicPath: './',
+    publicPath: '/todo-list/',
+  },
+  optimization: {
+    runtimeChunk: 'single',
   },
   module: {
     rules: [
@@ -30,8 +32,5 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
     ],
-  },
-  optimization: {
-    runtimeChunk: 'single',
   },
 };
